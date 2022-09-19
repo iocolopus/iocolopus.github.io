@@ -1,0 +1,66 @@
+button{
+
+    height:100px;
+    width:100px;
+    border: 0px;
+    
+}
+
+#resultado{
+
+    height:100px;
+    width:400;
+
+    background-color:#202020;
+    
+    font-size: 80px;
+
+    text-align: right;
+    vertical-align: middle;
+   
+    color: aliceblue;
+
+
+}
+
+.gris{
+
+    background-color: rgb(105, 105, 105);
+
+}
+
+.gris_oscuro{
+
+    background-color: rgb(53, 53, 53);
+
+}
+
+.naranja{
+
+    background-color: rgb(221, 153, 26);
+
+}
+
+.naranja,.gris_oscuro,.gris{
+
+    color: aliceblue;
+    font-size: 60px;
+}
+
+button:hover{
+
+    font-size:75px;
+    background-color: #b1b1b1;
+
+}
+
+table{
+
+    background-color:#202020;
+
+}
+
+*{
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+}
