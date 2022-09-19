@@ -57,10 +57,13 @@ button:hover{
 table{
 
     background-color:#202020;
+    margin: auto;
+    margin-top: 5%;
 
 }
 
 *{
     font-family: 'Prompt', sans-serif;
     border-radius: 10px;
+    background-color:#202020;
 }
