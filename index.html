@@ -4,40 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 en raya</title>
+    <title>Calculadora</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-    <script src="logic.js"></script>
-
 </head>
-<body>
+<body onload="main();">
 
     <table>
 
         <tr>
 
-            <td><span onclick="toggle(1)" id="1"></span></td>
-            <td><span onclick="toggle(2)" id="2"></span></td>
-            <td><span onclick="toggle(3)" id="3"></span></td>
+        <td colspan="4"><div id="resultado">0</div></td>
+        </tr>
+
+        <tr>
+            
+            <td><button onclick="borrar()" class="gris_oscuro">C</button></td>
+            <td><button onclick="add('\(')" class="gris_oscuro">(</button></td>
+            <td><button onclick="add('\)')" class="gris_oscuro">)</button></td>
+            <td><button onclick="add('/')" class="naranja">/</button></td>
 
 
         </tr>
 
         <tr>
 
-            <td><span onclick="toggle(4)" id="4"></span></td>
-            <td><span onclick="toggle(5)" id="5"></span></td>
-            <td><span onclick="toggle(6)" id="6"></span></td>
-
+            <td><button onclick="add('7')" class="gris">7</button></td>
+            <td><button onclick="add('8')" class="gris">8</button></td>
+            <td><button onclick="add('9')" class="gris">9</button></td>
+            <td><button onclick="add('*')" class="naranja">x</button></td>
 
         </tr>
 
         <tr>
 
-            <td><span onclick="toggle(7)" id="7"></span></td>
-            <td><span onclick="toggle(8)" id="8"></span></td>
-            <td><span onclick="toggle(9)" id="9"></span></td>
+            <td><button onclick="add('4')" class="gris">4</button></td>
+            <td><button onclick="add('5')" class="gris">5</button></td>
+            <td><button onclick="add('6')" class="gris">6</button></td>
+            <td><button onclick="add('-')" class="naranja">-</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td><button onclick="add('1')" class="gris">1</button></td>
+            <td><button onclick="add('2')" class="gris">2</button></td>
+            <td><button onclick="add('3')" class="gris">3</button></td>
+            <td><button onclick="add('+')" class="naranja">+</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td colspan="2"><button onclick="add('0')" class="gris" style="width:205px;">0</button></td>
+            <td><button onclick="add('.')" class="gris">.</button></td>
+            <td><button onclick="resolver()" class="naranja">=</button></td>
 
 
         </tr>
@@ -45,7 +71,8 @@
 
 
     </table>
-    
+
+    <script src="logic.js"></script>
     
 </body>
 </html>
